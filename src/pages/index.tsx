@@ -65,28 +65,27 @@ export default function Home() {
 }
 
 const basicCode = `<div id="0">
-<button id="1">이상욱 님</button>
-<button id="2">이용내역</button>
-<button id="3">즐겨찾기</button>
+  <button id="1">이상욱 님</button>
+  <button id="2">이용내역</button>
+  <button id="3">즐겨찾기</button>
 </div>
 <div id="4">
-<button id="5">쿠폰 0개</button>
-<button id="6">GO마일리지 0M</button>
+  <button id="5">쿠폰 0개</button>
+  <button id="6">GO마일리지 0M</button>
 </div>
 <div id="7">
-<button id="8">고속∙시외버스 막힘없이 달린다</button>
-<button id="9">온다택시 오늘도 안전하게</button>
-<button id="10">공항버스예매 공항까지 편하게</button>
-<button id="11">버스정보 집앞까지 정확하게</button>
-<button id="12">따릉이 나의 운동 메이트</button>
-<button id="13">지하철노선 빠르고 정확하게</button>
-<button id="14">씽씽 언제 어디서나</button>
+  <button id="8">고속∙시외버스 막힘없이 달린다</button>
+  <button id="9">온다택시 오늘도 안전하게</button>
+  <button id="10">공항버스예매 공항까지 편하게</button>
+  <button id="11">버스정보 집앞까지 정확하게</button>
+  <button id="12">따릉이 나의 운동 메이트</button>
+  <button id="13">지하철노선 빠르고 정확하게</button>
+  <button id="14">씽씽 언제 어디서나</button>
 </div>
 <div id="15">
-<button id="15">홈</button>
-<button id="16">마이</button>
-<button id="17">혜택</button>
-<button id="18">더보기</button>
+  <button id="15">홈</button>
+  <button id="16">마이</button>
+  <button id="17">혜택</button>
+  <button id="18">더보기</button>
 </div>
-
 `;
