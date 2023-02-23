@@ -87,5 +87,4 @@ const basicCode = `<div id="0">
   <button id="16">마이</button>
   <button id="17">혜택</button>
   <button id="18">더보기</button>
-</div>
-`;
+</div>`;
