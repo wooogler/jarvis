@@ -3,7 +3,7 @@ import { FormEvent, useState } from "react";
 import Editor from "@monaco-editor/react";
 
 export default function Home() {
-  const [htmlCode, setHtmlCode] = useState("");
+  const [htmlCode, setHtmlCode] = useState(basicCode);
   const [result, setResult] = useState("");
   const [instruction, setInstruction] = useState("");
 
@@ -43,8 +43,8 @@ export default function Home() {
         <Editor
           height='70vh'
           defaultLanguage='html'
-          defaultValue={basicCode}
           onChange={(code) => setHtmlCode(code || "")}
+          value={htmlCode}
         />
         <div>명령</div>
         <input
