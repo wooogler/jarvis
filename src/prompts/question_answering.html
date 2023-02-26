@@ -1,0 +1,57 @@
+Give questions and responses; the agent must identify questions that responses can answer ans generates the answers to the questions.
+
+Questions:
+<SOQ>Do you want to view your usage history? (id=2) <EOQ>
+<SOQ>Do you want to add a service to your favorites? (id=3) <EOQ>
+<SOQ>Do you want to view your coupons? (id=5) <EOQ>
+<SOQ>Do you want to view your GO mileage? (id=6) <EOQ>
+<SOQ>Do you want to book a high-speed or intercity bus? (id=8) <EOQ>
+<SOQ>Do you want to book a taxi? (id=9) <EOQ>
+<SOQ>Do you want to book an airport bus? (id=10) <EOQ>
+<SOQ>Do you want to view bus information? (id=11) <EOQ>
+<SOQ>Do you want to rent a bike? (id=12) <EOQ>
+<SOQ>Do you want to view subway line information? (id=13) <EOQ>
+<SOQ>Do you want to use the SSingSSing service? (id=14) <EOQ>
+<SOQ>Do you want to go to the home page? (id=15) <EOQ>
+<SOQ>Do you want to view your profile? (id=16) <EOQ>
+<SOQ>Do you want to view your benefits? (id=17) <EOQ>
+<SOQ>Do you want to view more services? (id=18) <EOQ>
+<SOQ>Where is your destination? (id=19)</SOQ>
+
+Responses:
+<SOR>I have to book a bus to Seoul<EOR>
+
+Now reasoning starts:
+Q: How many yes or no questions?
+A: 15
+Q: How many short-answer questions?
+A: 1
+
+Q: What is the id of a question that responses can answer yes?
+A: 8
+Q: What is the id of a question that responses can answer?
+A: 19
+Q: What is the answer to the id of a question that responses can answer?
+A: Seoul
+
+Answers:
+<SOA>Yes (id=8)<EOA>
+<SOA>Seoul (id=19)<EOA>
+
+Questions:
+<SOQ>Do you want to go back? (id=1) <EOQ>
+<SOQ>Do you want to select high-speed transportation? (id=4) <EOQ>
+<SOQ>Do you want to select intercity transportation? (id=5) <EOQ>
+<SOQ>What terminal do you want to search? (id=7) <EOQ>
+<SOQ>Do you want to search? (id=8) <EOQ>
+<SOQ>Do you want to view reservation history? (id=12) <EOQ>
+<SOQ>Do you want to receive departure notification? (id=14) <EOQ>
+<SOQ>Do you want to book the fastest bus? (id=15) <EOQ>
+<SOQ>Do you want to check additional services? (id=16) <EOQ>
+
+Responses:
+<SOR>I want to book a bus to Seoul<EOR>
+
+Now reasoning starts:
+
+

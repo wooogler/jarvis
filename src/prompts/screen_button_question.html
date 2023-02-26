@@ -1,0 +1,72 @@
+Given a screen, the agent needs to identify the elements requiring user input or click and generates corresponding questions
+
+Screen:
+<title id=0 class="alertTitle"> Create password </title> 
+<div id=1 class="titleDivider"> </div> 
+<input id=2 class="password"> Crowd3116 </input> 
+<input id=3 class="confirm password"> Crowd3116 </input>
+<input id=4 class="hint"> c3 </input> 
+<input id=5 class="edEmailAddress"> appcrawler40gmail.com </input>
+<p id=6 class="tvEmallAddressinfo"> This email address will be used to reset your password.</p>
+<button id=7 class="cancel"> Cancel </button>
+<button id=8 class="ok"> OK </button>
+
+Now reasoning starts:
+Q: How many input tags are there on the screen?
+A 4
+Q: How many button tags are there on the screen?
+A: 2
+Q: What is the purpose of the screen?
+A: Create password
+
+It's a create password page and there are 4 input tags and 2 button tags.
+including:
+1. id=2 asks for password.
+2. id=3 asks to confirm password
+3. id=4 asks for hint
+4. 1d=5 asks for email address.
+5. id=7 asks to cancel creating password.
+6. id=8 asks to submit created password.
+
+To help the user proceed with the screen, an agent will ask:
+<SOQ>What password do you want to create? (id=2) <E0Q> 
+<SOQ>Could you enter the password again to confirm? (id=3) <EOQ>
+<SOQ>What hint do you want to set? (id=4) <EOQ>
+<SOQ>What is your email in case you need to reset the password? (id=5) <EOQ>
+<SOQ>Do you want to cancel creating password? (id=7) <E0Q> 
+<SOQ>Do you want to submit created password? (id=8) <EOQ>
+
+Screen:
+<head>
+  <meta name="description" content="A main screen to select a transportation"/>
+  <title>Main Screen</title>
+</head>
+<body>
+  <div id="0">
+    <button id="1" class="back"></button>
+    <p id="2">고속∙시외 통합 예매</p>
+  </div>
+  <div id="3">
+    <button id="4" class="toggle-on">고속</button>
+    <button id="5" class="toggle-on">시외</button>
+  </div>
+  <div id="6">
+    <input id="7">터미널 검색</input>
+    <button id="8" class="search-icon"></button>
+  </div>
+  <div id="9">즐겨찾는 경로 보기</div>
+  <div id="10">
+    <p id="11">예매 확인 및 변경</p>
+    <button id="12">이용내역보기</button>
+    <p id="13">예매 승차권이 없습니다.</p>
+    <button id="14">출발전 알림을 받아보세요!</button>
+  </div>
+  <button id="15">
+    간편 예매 즐겨찾는 경로 중에서 가장 빠른 버스를 즉시 예약합니다!
+  </button>
+  <button id="16">
+    고속버스 부가서비스 도착시간 안내/프리패스 등의 부가서비스를 확인해보세요.
+  </button>
+</body>
+
+Now reasoning starts:

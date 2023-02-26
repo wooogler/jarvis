@@ -1,6 +1,9 @@
 import Head from "next/head";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import Editor from "@monaco-editor/react";
+import Image from "next/image";
+import mainScreenPic from '../../public/tmonygo/main.jpeg';
+import * as tf from '@tensorflow/tfjs';
 
 export default function Home() {
   const [htmlCode, setHtmlCode] = useState(basicCode);
@@ -40,20 +43,24 @@ export default function Home() {
 
       <main className='p-4 flex flex-col items-start'>
         <div>HTML 코드</div>
+        <div className='flex'>
         <Editor
           height='70vh'
+          width='600px'
           defaultLanguage='html'
           onChange={(code) => setHtmlCode(code || "")}
           value={htmlCode}
         />
+        <Image src={mainScreenPic} alt={"mobile screen"} width={300} height={600}/>
+        </div>
         <div>명령</div>
         <input
           type='text'
-          className='w-full mb-2'
+          className='input input-bordered w-full my-2'
           onChange={(e) => setInstruction(e.target.value)}
         ></input>
         <button
-          className='font-bold py-2 px-4 rounded bg-blue-500 text-white'
+          className='btn'
           onClick={async () => await onSubmit(htmlCode, instruction)}
         >
           연관 id 찾기
